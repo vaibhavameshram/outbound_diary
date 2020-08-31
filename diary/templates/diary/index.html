@@ -1,0 +1,367 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block title %}International Relations | IIT Kharagpur{% endblock %}
+{% block link %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="{% static 'diary/images/iitkgp_logo.png' %}">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="{% static 'diary/images/iitkgp_logo.png' %}">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/icon" href="{% static 'diary/images/iitkgp_logo.png' %}">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'diary/style.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
+        <!-- JS-->
+        <script>
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+            function myFunction() {
+                 var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                    x.className = "topnav";
+                    }
+                }
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+          
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+{% endblock %}
+{% block content %}
+<a name="top"></a>
+<!--header--> 
+<div class="header" style="background-color: #2f2f2f;">
+ <!--logo-->    
+    <div style="display: inline-block;padding: 10px;">
+         <a href="#" ><img src="{% static 'diary/images/header.png' %}" style="width: 350px;" alt="IIT KHARAGPUR logo"></a>
+    </div>
+    <!--quick links button-->  
+    <div class="dropdown" class="header-right">
+        <button  class="dropbtn" >Quick Links  <i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">MoUs</a>
+            <a href="#">How to Apply</a>
+            <a href="#">Contact</a>
+            <a href="#" target="_blank">OIR Login</a>
+            <a href="http://www.iitkgp.ac.in/">IIT KGP Website</a>
+            <a href="#">Exchange Diaries</a>
+            <a href="#">Payment</a>
+        </div>
+    </div>
+</div>
+<!--navbar-->
+<div class="topnav" id="myTopnav">
+    <div class="dropdown">
+        <button class="dropbtn">IITKGP Faculty
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Internal</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">IIT KGP Students
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Programs</a>
+          <a href="#">Funding</a>
+          <a href="https://ircell.iitkgp.ac.in/ftp/" target="_blank">FTP</a>
+          <a href="#">Opportunities</a>
+          <a href="#">Exchange Diaries</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">International Students
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Academic Programs</a>
+          <a href="#">How to Apply</a>
+          <a href="#">Fee Structure</a>
+          <a href="#">Funding</a>
+          <a href="#">Visa</a>
+          <a href="#">Accommodation</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Exchange Diaries</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">International Faculty
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Opportunities</a>
+          <a href="#">Funding</a>
+          <a href="#">Visa</a>
+          <a href="#">Accommodation</a>
+          <a href="#">Campus Life</a>
+          <a href="#">Exchange Diaries</a>
+          <a href="https://ircell.iitkgp.ac.in/ftp/">Project Registration</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Partners
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">MoU</a>
+          <a href="http://www.sric.iitkgp.ac.in/main.php" target="_blank">Industries</a>
+          <a href="http://www.sric.iitkgp.ac.in/iprpol.php" target="_blank">IPR</a>
+          <a href="#">Ministries &amp; Embassies</a>
+          <a href="#">Philanthropists</a>
+          <a href="http://www.alumni.iitkgp.ac.in/" target="_blank">Alumni Relations</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Publications
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">IIT KGP Researcher</a>
+          <a href="#">Newletters</a>
+          <a href="#">Flyers</a>
+          <a href="#" target="_blank">Research Newletters</a>
+        </div>
+      </div>
+      <a href="#">Forever Kgpian</a>
+    <div class="dropdown">
+      <button class="dropbtn">Contact us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Office of International<br> Relations</a>
+        <a href="#">International Relations Cell</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!--sidebar-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" style="pointer-events: none; cursor: none; color: white; padding-right: 1vw;">
+        Outbound Diaries</a>
+        <a href="#" class="active" style=" padding-right: 1vw;">2019</a>
+        <a href="#" style=" padding-right: 1vw;">2018</a>
+        <a href="#" style=" padding-right: 1vw;">2017</a>
+        <a href="#" style=" padding-right: 1vw;">2016</a>
+        <a href="#" style=" padding-right: 1vw;">2015</a>
+        &nbsp;
+        <a href="#" style="color: white; font-size: 1.1em; padding-right: 1vw;">Inbound Diaries</a>
+        <a href="#" style="color: white; font-size: 1.1em; padding-right: 1vw">SGRIP</a>
+        <a href="#" style="color: white; font-size: 1.1em; padding-right: 1vw;">GIAN</a>
+        <a href="#" style="color: white; font-size: 1.1em; padding-right: 1vw;">Dual Doctoral Program</a>
+</div>
+<span style="font-size:30px;cursor:pointer;background-color:#3498DB ;" onclick="openNav()">&#9776; </span>
+<!--content-->  
+<div style="background-color: #8f9296;" >
+
+  <div class="slideshow-container" >
+
+    <div class="mySlides fade" style="background-color: #8f9296;">
+      <div class="numbertext">1 / 5</div>
+      <div class="row"><center>
+        <div class="col-md-3" style="min-height: 25vh;">
+          <img src="{% static 'diary/images/anuj.jpg' %}" style="max-width: 100%; height: auto; margin-top: 9px;">
+        </div>
+        <div class="col-md-9">
+          <h2 style="font-weight: bold; margin: 0">Anuj Daga |
+          <b>Architecture and Regional Planning</b></h2>
+          <h3 style="font-weight: bold; margin-top: 0"><i>Laval University</i>, Canada</h3>
+          <p><b>Research Area: </b>Big Data Analytics</p>
+          <p><b>Duration: </b>2 Months</p>
+          <a href="/exc_diaries/outbound_diaries/2019/anuj-daga/" style="color: #4b65c1">Read more</a>
+        </center></div>
+      </div>
+    </div>
+  
+    <div class="mySlides fade" style="background-color: #8f9296;">
+      <div class="numbertext">2 / 5</div>
+      <div class="row"><center>
+        <div class="col-md-3" style="min-height: 25vh;">
+            <img src="{% static 'diary/images/57408029_2344436085833835_8764980854641393664_o.jpg' %}" style="max-width: 100%; height: auto; margin-top: 9px;">
+        </div>
+        <div class="col-md-9">
+            <h2 style="font-weight: bold; margin: 0">Gopabandhu Hota |
+            <b>Electronics and Electrical Communication Engg.</b></h2>
+            <h3 style="font-weight: bold; margin-top: 0"><i>Stanford university</i>, US</h3>
+            <p><b>Research Area: </b>Neuromorphic Computing and Bioelectronics</p>
+            <p><b>Duration: </b>2.5 Months</p>
+            <a href="/exc_diaries/outbound_diaries/2019/gopabandhu-hota-electronics-and-electrical-commu/" style="color: #4b65c1">Read more</a>
+       </center> </div>
+      </div>
+    </div>
+    
+    <div class="mySlides fade" style="background-color: #8f9296;">
+      <div class="numbertext">3 / 5</div>
+
+      <div class="row"><center>
+        <div class="col-md-3" style="min-height: 25vh;">
+            <img src="{% static 'diary/images/0_1.jpg' %}" style="max-width: 100%; height: auto; margin-top: 9px;">
+        </div>
+        <div class="col-md-9">
+            <h2 style="font-weight: bold; margin: 0">Jahnvi Singh |
+            <b>Electronics and Electrical Communication Engg.</b></h2>
+            <h3 style="font-weight: bold; margin-top: 0"><i>University of Tokyo</i>, Japan</h3>
+            <p><b>Research Area: </b>Architecture Design of Digital Integrated Circuit</p>
+            <p><b>Duration: </b>3 Months</p>
+            <a href="/exc_diaries/outbound_diaries/2019/jahnvi-singh-electronics-and-electrical-communic/" style="color: #4b65c1">Read more</a>
+        </center></div>
+      </div>
+    </div>
+
+    <div class="mySlides fade" style="background-color: #8f9296;">
+      <div class="numbertext">4 / 5</div>
+      <div class="row"><center>
+        <div class="col-md-3" style="min-height: 25vh;">
+            <img src="{% static 'diary/images/0_lX3we5u.jpg' %}" style="max-width: 100%; height: auto; margin-top: 9px;">
+        </div>
+        <div class="col-md-9">
+            <h2 style="font-weight: bold; margin: 0">Mayank Palaria |
+            <b>Electronics and Electrical Communication Engg.</b></h2>
+            <h3 style="font-weight: bold; margin-top: 0"><i>University of British Columbia</i>, Canada</h3>
+            <p><b>Research Area: </b>.</p>                    
+            <p><b>Duration: </b>3 Months</p>
+            <a href="/exc_diaries/outbound_diaries/2019/mayank-palaria/" style="color: #4b65c1">Read more</a>
+          </center></div>
+      </div>
+    </div>
+
+    <div class="mySlides fade" style="background-color: #8f9296;">
+      <div class="numbertext">5 / 5</div>
+      <div class="row"><center>
+        <div class="col-md-3" style="min-height: 25vh;">
+            <img src="{% static 'diary/images/66811364_2279490405497339_4329789829979045888_o.jpg' %}" style="max-width: 100%; height: auto; margin-top: 9px;">
+        </div>
+        <div class="col-md-9">
+            <h2 style="font-weight: bold; margin: 0">Kumar Saurav |
+            <b>Electronics and Electrical Communication Engg.</b></h2>
+            <h3 style="font-weight: bold; margin-top: 0"><i>University of British Columbia,Vancouver (Canada)</i>, Canada</h3>
+            <p><b>Research Area: </b>.</p>
+            <p><b>Duration: </b>2.5 Months</p>
+            <a href="/exc_diaries/outbound_diaries/2019/kumar-saurav-electronics-and-electrical-communic/" style="color: #4b65c1">Read more</a>
+          </center></div>
+      </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+  </div>
+  <div style="text-align: right;padding-right:  20px;">
+    <p>If you want to be featured in Outbound Diaries,</p>
+    <p style="margin-top: -15px">Mail us at <a href="mailto:irc@iitkgp.ac.in" style="color: #337ab7;text-decoration: none;">irc@iitkgp.ac.in</a></p>
+</div>
+</div>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+<!--footer-->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <img src="{% static 'diary/images/header.png' %}" style="width: 250px;" alt="IIT KHARAGPUR logo">
+        <h3>ABOUT US</h3>
+        <p>The Office of International Relations (OIR) works to promote exchange of students faculty
+            and ideas between IIT Kharagpur and her international partners.
+            The Office has a dedicated team of Executives working on all aspects of international
+            engagement and is headed by the
+            Dean of International Relations. Adiministrative support is also provided by the
+            Institutional Development Office.
+            The International Relations Cell (IRC) is a student body working under the OIR.
+            Together OIR and IRC work towards increasing IIT Kharagpur's global outreach.</p>
+
+        <p class="footer-company-name">Copyright © All Rights Reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div><h3>REACH OUT TO US</h3>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Office of International Relations</span>
+                Indian Institute of Technology Kharagpur
+                <br> West Bengal, India - 721302
+                <br><a href="https://goo.gl/maps/SkA42NycZ5C2" class="mc" target="_blank">(22.3149274 °N,
+                    87.3083424 °E)</a><br></p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>Phone: +91-3222-281068</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>Email:<a href="#"><br> ir-office@adm.iitkgp.ac.in</a></p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="/team/">IR Cell</a><br>
+            <a href="/mou/">MoU</a><br>
+            <a href="/type/">How to Apply</a><br>
+            <a href="/interacco/">Accommodation</a><br>
+            <a href="/intercampus/">Campus Life</a><br>
+            <a href="/oir/">Contact</a><br>
+            <a href="http://www.iitkgp.ac.in/">IIT KGP Website</a><br>
+            <a href="/exc_diaries/">Exchange Diaries</a><br>
+            <a href="/payment/">Payment</a><br>
+
+        </div>
+    </div>
+    <div class="footer-right">
+        <h3>SOCIAL LINKS</h3>
+            <div class="footer-icons">
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="https://twitter.com/IITKgp" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="https://www.linkedin.com/company/15235636/" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="mailto:irc@iitkgp.ac.in" data-original-title="Mail"><i class="fa fa-envelope-o"></i></a>	
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="https://www.youtube.com/channel/UCQCLWAILNrEVemERg4ybAYQ" data-original-title="Youtube"><i class="fa fa-youtube"></i></a>				
+                <br><br>
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="https://www.facebook.com/IIT.Kgp/" style="font-size: medium" data-original-title="Facebook"><i class="fa fa-facebook"></i> </a><span style="color:  #337ab7;text-decoration: none;" >IIT Kharagpur</span>
+                <br>
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="https://www.facebook.com/IITKGPOIR/" style="font-size: medium" data-original-title="Facebook"><i class="fa fa-facebook"></i> </a><span style="color:  #337ab7;text-decoration: none;" >Office of International Relations</span>
+                <br>
+                <a data-toggle="tooltip" data-placement="top" title="" class="soc_tooltip" href="https://www.facebook.com/IRCIITKGP/" style="font-size: medium" data-original-title="Facebook"><i class="fa fa-facebook"></i> </a><span style="color:  #337ab7;text-decoration: none;" >International Relations Cell</span>
+            </div>
+    </div>
+</footer>
+<!--top button-->
+<a href="#top"><img src="{% static 'diary/images/top.png' %}" alt="top" class="top"></a>
+{% endblock %}
